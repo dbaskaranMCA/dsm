@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+body,.bg-color{
+    background-color: rgba(34, 104, 124, 0.09);
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    height: 100%;
+  }
+  .card{
+        max-width: 25em;     
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+  }
+
+  .full-width{
+      width: 100%;
+  }
+  .LoginBtn{
+      margin-bottom: 3px !important;
+  }
+
+  .signIn{
+      background-color: #22687c;
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      font-weight:100;
+      margin: -16px !important;
+      padding: 12px;
+      margin-bottom: 20px !important;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+  }
+  .textLeft{
+      text-align: left;
+  }
+  .textCenter{
+      text-align: center;
+  }
+  .remember{
+      margin-bottom: 10px !important;
+  }
+
+  .blueBg{
+    background-color: #22687c;
+  }
+
+  .whiteTxt{
+      color:#fff;
+  }
+  .logo{
+    max-width: 20%;
+    margin-top: 6em;
+  }
+.dsm{
+    font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      color: #000;
+      font-weight:100;
+     margin: 0px;
+}
+  @media (max-width:768px){
+    .logo{
+        max-width: 75%;
+        margin-top: 6em;
+      }
+  }
