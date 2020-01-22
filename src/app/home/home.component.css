@@ -1,0 +1,78 @@
+.example-icon {
+    padding: 0px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .example-container {
+    width: 100%;
+    height: 90vh;
+    border: none !important;
+    background-color: transparent !important;
+    
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav-content button{
+    padding: 0px;
+    min-width: 50px;
+    color:#fff;
+  }
+ .mat-menu-item{
+    line-height: 35px;
+    height: 35px;
+ }
+ .mat-drawer{
+    width:175px !important;
+ }
+ .menuDropdown {
+     min-height: 10px !important;
+ }
+
+ .mat-menu-content{
+     padding-bottom: 0px !important;
+     padding-top: 0px !important;
+ }
+ .mat-menu-trigger{
+   min-width: 30px !important;
+ }
+ .mat-menu-item .mat-icon {
+  margin-right: 0px;
+  margin-top: -5px;
+  
+}
+ /* .blueTxt{
+  color: rgb(0, 106, 216);
+ }
+ .pinkTxt{
+  color: rgb(239, 0, 66);
+ }
+ .greenTxt{
+  color: rgb(7, 154, 5);
+ }
+.lavenderTxt{
+  color: rgb(140, 66, 239);
+}
+.yellowTxt{
+  color: rgb(224, 125, 3);
+}
+.lpinkTxt{  
+    color: #ff36c1;
+}
+.brownTxt{
+  color: #a92d08;
+} */
+ @media (max-width:768px){     
+    .example-sidenav-content button{
+        padding: 5px;
+        min-width: 25px;
+        color:#fff;
+      }
+  }

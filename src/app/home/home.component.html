@@ -1,0 +1,59 @@
+<mat-toolbar class="blueBg">
+    <mat-toolbar-row>
+        <div class="example-sidenav-content">
+            <button type="button" mat-button (click)="drawer.toggle()">
+                <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">menu</mat-icon>
+            </button>
+        </div>
+
+        <span class="whiteTxt">DSM</span>
+        <span class="example-spacer"></span>
+        <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon class="example-icon whiteTxt" aria-hidden="false" aria-label="Example heart icon">account_circle
+            </mat-icon>
+           
+        </button>
+        <mat-menu #menu="matMenu" class="whiteTxt menuDropdown">
+            <button mat-menu-item>Logout</button>
+        </mat-menu>
+
+    </mat-toolbar-row>
+
+</mat-toolbar>
+
+<mat-drawer-container  class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <mat-list>
+            <h3 mat-subheader>Super Admin</h3>
+            <mat-divider></mat-divider>
+            <button mat-menu-item class="blueTxt">  User Tracker</button>
+            <button mat-menu-item class="pinkTxt">Matrics</button>
+            <button mat-menu-item class="greenTxt">Health</button>
+            <button mat-menu-item class="lavenderTxt">Configuration</button>
+            <button mat-menu-item class="yellowTxt">Audits</button>
+            <button mat-menu-item class="lpinkTxt">Logs</button>
+            <button mat-menu-item class="brownTxt">API</button>
+            <mat-divider></mat-divider>
+            <h3 mat-subheader>Configuration</h3>
+            <mat-divider></mat-divider>
+            <button mat-menu-item class="brownTxt" (click)="globalHandle()">Global</button>
+            <button mat-menu-item class="brownTxt">Pickup Delivary</button>
+            <button mat-menu-item class="brownTxt">Location</button>
+            <button mat-menu-item class="brownTxt">Cluster</button>
+            <button mat-menu-item class="brownTxt">Warehouse</button>
+            <button mat-menu-item class="brownTxt">User</button>
+            <button mat-menu-item class="brownTxt">Customer</button>
+            <button mat-menu-item class="brownTxt">Products</button>
+            <mat-divider></mat-divider>
+            <h3 mat-subheader>Interface</h3>
+            <mat-divider></mat-divider>
+            <button mat-menu-item class="brownTxt">API</button>
+            <mat-list-item>
+                <h4 mat-line></h4>
+            </mat-list-item>
+        </mat-list>
+    </mat-drawer>
+    <router-outlet></router-outlet>
+</mat-drawer-container >
+
+
