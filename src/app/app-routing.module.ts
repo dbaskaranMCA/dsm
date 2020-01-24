@@ -5,7 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { GlobalComponent } from './global/global.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
 
   {
     path: 'components', component: HomeComponent,
@@ -15,7 +16,7 @@ const routes: Routes = [
   },
 
   {
-    path: '',
+    path: 'login',
     redirectTo: '/login',
     pathMatch: 'full'
   }

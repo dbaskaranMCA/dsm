@@ -1,16 +1,71 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>AgaminDsm</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>AgaminDsm</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/lib/plugin/pace/pace-theme-flash.css" rel="stylesheet" />
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="assets/lib/plugin/data-table/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="assets/lib/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/lib/plugin/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" />
+
+    <link href="assets/lib/css/responsive.css" rel="stylesheet" />
+
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="assets/css/paperIcons.css" rel="stylesheet">
 </head>
+
 <body>
-  <app-root></app-root>
-  
+    <app-root></app-root>
+
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/jquery/jquery.easing.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="assets/lib/jquery/jquery.sortElements.js"></script>-->
+    <script src="assets/lib/jquery/jquery.validate.min.js"></script>
+    <script src="assets/lib/plugin/data-table/js/jquery.dataTables.min.js"></script>
+    <script src="assets/lib/plugin/data-table/js/dataTables.bootstrap.min.js"></script>
+    <script src="assets/lib/plugin/pace/pace.min.js"></script>
+    <script src="assets/lib/plugin/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/lib/plugin/viewport/viewportchecker.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="assets/lib/jquery/scripts.js"></script>
+    <script type="text/javascript">
+        $('#main-menu-wrapper li a').click(function(e) {
+            if ($(this).next().hasClass('sub-menu') === false) {
+                return;
+            }
+            var parent = $(this).parent().parent();
+            var sub = $(this).next();
+            parent.children('li.open').children('.sub-menu').slideUp(200);
+            parent.children('li.open').children('a').children('.arrow').removeClass('open');
+            parent.children('li').removeClass('open');
+            if (sub.is(":visible")) {
+                $(this).find(".arrow").removeClass("open");
+                sub.slideUp(200);
+            } else {
+                $(this).parent().addClass("open");
+                $(this).find(".arrow").addClass("open");
+                sub.slideDown(200);
+            }
+        });
+        $("body").click(function(e) {
+            $(".page-sidebar.collapseit .wraplist li.open .sub-menu").attr("style", "");
+            $(".page-sidebar.collapseit .wraplist li.open").removeClass("open");
+            $(".page-sidebar.chat_shift .wraplist li.open .sub-menu").attr("style", "");
+            $(".page-sidebar.chat_shift .wraplist li.open").removeClass("open");
+        });
+    </script>
+
 </body>
+
 </html>
