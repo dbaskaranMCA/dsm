@@ -1,0 +1,333 @@
+<header class="blue accent-3 relative nav-sticky">
+    <div class="container-fluid text-white margin-left-15">
+        <div class="row p-t-b-10 ">
+            <div class="col">
+                <h4 class="text-white "><i class="icon-box"></i> User Details</h4>
+            </div>
+        </div>
+
+    </div>
+</header>
+<div class="container-fluid relative animatedParent animateOnce">
+
+
+    <section class="paper-card">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+
+
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h4 class="box-title pull-left margin-top-10">Users </h4>
+                        <button type="button" class="btn btn-primary pull-right margin-bottom-15 addBtn" data-toggle="modal" data-target="#exampleModal"> Add New User</button>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table datatable [dtOptions]="dtOptions" class="row-border hover table-bordered full-width">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Login</th>
+                                    <th>Email</th>
+                                    <th>Profiles</th>
+                                    <th>Created Date</th>
+                                    <th>Last Modified</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>MSP (Super) New Delhi</td>
+                                    <td>A-26/6, Mohan Co Operative Industrial Estate, <br>Mathura Road 110044 New Delhi</td>
+                                    <td>28.52433 </td>
+                                    <td>77.290401</td>
+                                    <td>New Delhi</td>
+                                    <td>
+                                        <tr>
+                                            <td>
+                                                <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal" data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                                <button class="btn btn-warning btn-xs  margin-left-5" title="Edit" data-toggle="modal" data-target="#editDetails"><i class="icon-pencil text-white"></i></button>
+                                                <button class="btn btn-danger btn-xs  margin-left-5" title="Delete" data-toggle="modal" data-target="#deleteDetails"><i class="icon-trash text-white"></i></button>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>MSP (Super) New Delhi</td>
+                                    <td>A-26/6, Mohan Co Operative Industrial Estate, <br>Mathura Road 110044 New Delhi</td>
+                                    <td>28.52433 </td>
+                                    <td>77.290401</td>
+                                    <td>New Delhi</td>
+                                    <td>
+                                        <tr>
+                                            <td>
+                                                <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal" data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                                <button class="btn btn-warning btn-xs  margin-left-5" title="Edit" data-toggle="modal" data-target="#editDetails"><i class="icon-pencil text-white"></i></button>
+                                                <button class="btn btn-danger btn-xs  margin-left-5" title="Delete" data-toggle="modal" data-target="#deleteDetails"><i class="icon-trash text-white"></i></button>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>MSP (Super) New Delhi</td>
+                                    <td>A-26/6, Mohan Co Operative Industrial Estate, <br>Mathura Road 110044 New Delhi</td>
+                                    <td>28.52433 </td>
+                                    <td>77.290401</td>
+                                    <td>New Delhi</td>
+                                    <td>
+                                        <tr>
+                                            <td>
+                                                <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal" data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                                <button class="btn btn-warning btn-xs  margin-left-5" title="Edit" data-toggle="modal" data-target="#editDetails"><i class="icon-pencil text-white"></i></button>
+                                                <button class="btn btn-danger btn-xs  margin-left-5" title="Delete" data-toggle="modal" data-target="#deleteDetails"><i class="icon-trash text-white"></i></button>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>MSP (Super) New Delhi</td>
+                                    <td>A-26/6, Mohan Co Operative Industrial Estate, <br>Mathura Road 110044 New Delhi</td>
+                                    <td>28.52433 </td>
+                                    <td>77.290401</td>
+                                    <td>New Delhi</td>
+                                    <td>
+                                        <tr>
+                                            <td>
+                                                <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal" data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                                <button class="btn btn-warning btn-xs  margin-left-5" title="Edit" data-toggle="modal" data-target="#editDetails"><i class="icon-pencil text-white"></i></button>
+                                                <button class="btn btn-danger btn-xs  margin-left-5" title="Delete" data-toggle="modal" data-target="#deleteDetails"><i class="icon-trash text-white"></i></button>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>MSP (Super) New Delhi</td>
+                                    <td>A-26/6, Mohan Co Operative Industrial Estate, <br>Mathura Road 110044 New Delhi</td>
+                                    <td>28.52433 </td>
+                                    <td>77.290401</td>
+                                    <td>New Delhi</td>
+                                    <td>
+                                        <tr>
+                                            <td>
+                                                <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal" data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                                <button class="btn btn-warning btn-xs  margin-left-5" title="Edit" data-toggle="modal" data-target="#editDetails"><i class="icon-pencil text-white"></i></button>
+                                                <button class="btn btn-danger btn-xs  margin-left-5" title="Delete" data-toggle="modal" data-target="#deleteDetails"><i class="icon-trash text-white"></i></button>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>MSP (Super) New Delhi</td>
+                                    <td>A-26/6, Mohan Co Operative Industrial Estate, <br>Mathura Road 110044 New Delhi</td>
+                                    <td>28.52433 </td>
+                                    <td>77.290401</td>
+                                    <td>New Delhi</td>
+                                    <td>
+                                        <tr>
+                                            <td>
+                                                <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal" data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                                <button class="btn btn-warning btn-xs  margin-left-5" title="Edit" data-toggle="modal" data-target="#editDetails"><i class="icon-pencil text-white"></i></button>
+                                                <button class="btn btn-danger btn-xs  margin-left-5" title="Delete" data-toggle="modal" data-target="#deleteDetails"><i class="icon-trash text-white"></i></button>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>MSP (Super) New Delhi</td>
+                                    <td>A-26/6, Mohan Co Operative Industrial Estate, <br>Mathura Road 110044 New Delhi</td>
+                                    <td>28.52433 </td>
+                                    <td>77.290401</td>
+                                    <td>New Delhi</td>
+                                    <td>
+                                        <tr>
+                                            <td>
+                                                <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal" data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                                <button class="btn btn-warning btn-xs  margin-left-5" title="Edit" data-toggle="modal" data-target="#editDetails"><i class="icon-pencil text-white"></i></button>
+                                                <button class="btn btn-danger btn-xs  margin-left-5" title="Delete" data-toggle="modal" data-target="#deleteDetails"><i class="icon-trash text-white"></i></button>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left" id="exampleModalLabel">Create or edit a Location</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                 </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group has-icon">
+                        <label>Warehouse Name</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Warehouse Name">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Warehouseaddress</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Warehouse Address">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Latitude</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Latitude">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Longitude</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Longitude">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label> Location</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>New Delhi</option>
+                            <option>Chandigarh</option>
+                            <option>Karnataka</option>
+                            <option>Tamil Nadu</option>
+                            <option>Kerala</option>                                
+                          </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary addBtn">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="viewDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left" id="exampleModalLabel">Warehouse Details</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                 </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <div>
+                            <h4>Warehouse Name</h4>
+                            <p>East Delhi</p>
+                        </div>
+                        <div>
+                            <h4>Warehouse Address</h4>
+                            <p>110092,110032,110091,110051,110095,110096,110053,110031</p>
+                        </div>
+                        <div>
+                            <h4>Latitude</h4>
+                            <p>New Delhi</p>
+                        </div>
+                        <div>
+                            <h4>Longitude</h4>
+                            <p>77.290401</p>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>New delhi</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="editDetails" tabindex=" -1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+    <div class="modal-dialog " role="document ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h4 class="modal-title pull-left " id="exampleModalLabel ">Create or edit a Warehouse</h4>
+                <button type="button " class="close " data-dismiss="modal" aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                 </button>
+            </div>
+            <div class="modal-body ">
+                <form>
+
+                    <div class="form-group has-icon">
+                        <label>Warehouse Name</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Warehouse Name">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Warehouseaddress</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Warehouse Address">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Latitude</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Latitude">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Longitude</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Longitude">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label> Location</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>New Delhi</option>
+                            <option>Chandigarh</option>
+                            <option>Karnataka</option>
+                            <option>Tamil Nadu</option>
+                            <option>Kerala</option>                                
+                          </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer ">
+                <button type="button " class="btn btn-secondary" data-dismiss="modal" aria-label="Close ">
+                  Close
+                 </button>
+                <button type="button " class="btn btn-primary addBtn ">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="deleteDetails" tabindex=" -1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+    <div class="modal-dialog " role="document ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h4 class="modal-title pull-left " id="exampleModalLabel ">Confirm delete operation</h4>
+                <button type="button " class="close " data-dismiss="modal" aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                 </button>
+            </div>
+            <div class="modal-body ">
+                <p>Are you sure you want to delete this Warehouse?</p>
+            </div>
+            <div class="modal-footer ">
+                <button type="button " class="btn btn-danger " data-dismiss="modal" aria-label="Close ">
+                    Delete
+                 </button>
+
+            </div>
+        </div>
+    </div>
+</div>

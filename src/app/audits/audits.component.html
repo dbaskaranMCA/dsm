@@ -1,0 +1,248 @@
+<header class="blue accent-3 relative nav-sticky">
+    <div class="container-fluid text-white margin-left-15">
+        <div class="row p-t-b-10 ">
+            <div class="col">
+                <h4 class="text-white "><i class="icon-box"></i> Audits Details</h4>
+            </div>
+        </div>
+
+    </div>
+</header>
+<div class="container-fluid relative animatedParent animateOnce">
+
+
+    <section class="paper-card">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+
+
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h4 class="box-title pull-left margin-top-10">Audits </h4>
+                       <input type="text" class="form-control" placeholder="From Date">
+                       <input type="text" class="form-control" placeholder="To Date">
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table datatable [dtOptions]="dtOptions" class="row-border hover table-bordered full-width">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>User</th>
+                                    <th>State</th>
+                                    <th>Extra Data</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jan 9, 2020, 3:56:02 AM</td>
+                                    <td>user</td>
+                                    <td>AUTHENTICATION_SUCCESS</td>
+                                    <td></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Jan 9, 2020, 3:56:02 AM</td>
+                                    <td>user</td>
+                                    <td>AUTHENTICATION_SUCCESS</td>
+                                    <td></td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Jan 9, 2020, 3:56:02 AM</td>
+                                    <td>user</td>
+                                    <td>AUTHENTICATION_SUCCESS</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Jan 9, 2020, 3:56:02 AM</td>
+                                    <td>user</td>
+                                    <td>AUTHENTICATION_SUCCESS</td>
+                                    <td></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Jan 9, 2020, 3:56:02 AM</td>
+                                    <td>user</td>
+                                    <td>AUTHENTICATION_SUCCESS</td>
+                                    <td></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Jan 9, 2020, 3:56:02 AM</td>
+                                    <td>user</td>
+                                    <td>AUTHENTICATION_SUCCESS</td>
+                                    <td></td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Jan 9, 2020, 3:56:02 AM</td>
+                                    <td>user</td>
+                                    <td>AUTHENTICATION_SUCCESS</td>
+                                    <td></td>
+                                    
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left" id="exampleModalLabel">Create or edit a Location</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                 </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group has-icon">
+                        <label>City</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="City">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>State</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="State">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Country</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Country">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label> Region</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>All</option>
+                            <option>East</option>
+                            <option>West</option>
+                            <option>South</option>
+                            <option>North</option>
+                                
+                          </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary addBtn">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="viewDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left" id="exampleModalLabel">Locations Details</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                 </button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> City</th>
+                            <th>State</th>
+                            <th>Country</th>
+                            <th>Region</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Banglore</td>
+                            <td>Karnataka</td>
+                            <td>India</td>
+                            <td>South</td>
+                        </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="editDetails" tabindex=" -1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+    <div class="modal-dialog " role="document ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h4 class="modal-title pull-left " id="exampleModalLabel ">Create or edit a Locations</h4>
+                <button type="button " class="close " data-dismiss="modal" aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                 </button>
+            </div>
+            <div class="modal-body ">
+                <form>
+
+                    <div class="form-group has-icon">
+                        <label>City</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="City">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>State</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="State">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Country</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Country">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label> Region</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>All</option>
+                            <option>East</option>
+                            <option>West</option>
+                            <option>South</option>
+                            <option>North</option>
+                                
+                          </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer ">
+                <button type="button " class="btn btn-secondary" data-dismiss="modal" aria-label="Close ">
+                  Close
+                 </button>
+                <button type="button " class="btn btn-primary addBtn ">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="deleteDetails" tabindex=" -1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+    <div class="modal-dialog " role="document ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h4 class="modal-title pull-left " id="exampleModalLabel ">Confirm delete operation</h4>
+                <button type="button " class="close " data-dismiss="modal" aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                 </button>
+            </div>
+            <div class="modal-body ">
+                <p>Are you sure you want to delete this Locations?</p>
+            </div>
+            <div class="modal-footer ">
+                <button type="button " class="btn btn-danger " data-dismiss="modal" aria-label="Close ">
+                    Delete
+                 </button>
+
+            </div>
+        </div>
+    </div>
+</div>

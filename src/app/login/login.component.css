@@ -291,7 +291,7 @@ form-group.has-icon input {
     display: block;
     width: 100%;
     padding: .375rem .75rem;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.5;
     color: #495057;
     background-color: #fff;
@@ -371,7 +371,7 @@ input[type=submit].btn-block {
     user-select: none;
     border: 1px solid transparent;
     padding: .375rem .75rem;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;

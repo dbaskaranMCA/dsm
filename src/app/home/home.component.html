@@ -38,19 +38,19 @@
                     <i class="icon icon-sailing-boat-water purple-text s-18"></i> <span>Super Admin</span> <i class="icon icon-angle-left s-18 pull-right"></i>
                 </a>
                 <ul class="treeview-menu sub-menu">
-                    <li><a href="index.html"><i class="icon icon-circle-o"></i>User Tracker</a>
+                    <li><a href="components/userTracker"><i class="icon icon-circle-o"></i>User Tracker</a>
                     </li>
-                    <li><a href="panel-page-dashboard2.html"><i class="icon icon-circle-o"></i>Matrics</a>
+                    <li><a href="components/metrics"><i class="icon icon-circle-o"></i>Matrics</a>
                     </li>
-                    <li><a href="panel-page-dashboard3.html"><i class="icon icon-circle-o"></i>Health</a>
+                    <li><a href="components/health"><i class="icon icon-circle-o"></i>Health</a>
                     </li>
-                    <li><a href="panel-page-dashboard4.html"><i class="icon icon-circle-o"></i>Configuration</a>
+                    <li><a href="components/configuration"><i class="icon icon-circle-o"></i>Configuration</a>
                     </li>
-                    <li><a href="panel-page-dashboard5.html"><i class="icon icon-circle-o"></i>Audits</a>
+                    <li><a href="components/audits"><i class="icon icon-circle-o"></i>Audits</a>
                     </li>
-                    <li><a href="panel-page-dashboard5.html"><i class="icon icon-circle-o"></i>Logs</a>
+                    <li><a href="components/logs"><i class="icon icon-circle-o"></i>Logs</a>
                     </li>
-                    <li><a href="panel-page-dashboard5.html"><i class="icon icon-circle-o"></i>API</a>
+                    <li><a href="javascript:void(0);"><i class="icon icon-circle-o"></i>API</a>
                     </li>
                 </ul>
             </li>
@@ -61,14 +61,14 @@
                     <i class="icon icon-angle-left s-18 pull-right"></i>
                 </a>
                 <ul class="treeview-menu sub-menu">
-                    <li><a href="panel-page-products.html"><i class="icon icon-circle-o"></i>Global</a></li>
-                    <li><a href="panel-page-products.html"><i class="icon icon-circle-o"></i>Pickup delivary</a></li>
-                    <li><a href="panel-page-products.html"><i class="icon icon-circle-o"></i>Location</a></li>
-                    <li><a href="panel-page-products.html"><i class="icon icon-circle-o"></i>Cluster</a></li>
-                    <li><a href="panel-page-products.html"><i class="icon icon-circle-o"></i>Warehouse</a></li>
-                    <li><a href="panel-page-products.html"><i class="icon icon-circle-o"></i>User</a></li>
-                    <li><a href="panel-page-products.html"><i class="icon icon-circle-o"></i>Customer</a></li>
-                    <li><a href="panel-page-products.html"><i class="icon icon-circle-o"></i>Products</a></li>
+                    <li><a href="components/global"><i class="icon icon-circle-o"></i>Global</a></li>
+                    <li><a href="components/pickup"><i class="icon icon-circle-o"></i>Pickup delivary</a></li>
+                    <li><a href="components/location"><i class="icon icon-circle-o"></i>Location</a></li>
+                    <li><a href="components/cluster"><i class="icon icon-circle-o"></i>Cluster</a></li>
+                    <li><a href="components/warehouse"><i class="icon icon-circle-o"></i>Warehouse</a></li>
+                    <li><a href="components/user"><i class="icon icon-circle-o"></i>User</a></li>
+                    <li><a href="components/customer"><i class="icon icon-circle-o"></i>Customer</a></li>
+                    <li><a href="components/products"><i class="icon icon-circle-o"></i>Products</a></li>
 
                 </ul>
             </li>
@@ -84,11 +84,11 @@
         </ul>
     </section>
 </aside>
-
+<div class="has-sidebar-left">
 <div class="sticky">
     <div class="navbar navbar-expand navbar-dark d-flex justify-content-between bd-navbar blue accent-3">
         <div class="relative">
-            <a href="#" data-toggle="offcanvas" class="paper-nav-toggle pp-nav-toggle">
+            <a href="javascript:void(0)" data-toggle="offcanvas" class="paper-nav-toggle pp-nav-toggle">
                 <i></i>
             </a>
         </div>
@@ -104,75 +104,37 @@
                         <img src="assets/images/u8.png" class="user-image" alt="User Image">
                         <i class="icon-more_vert "></i>
                     </a>
-                    <div class="dropdown-menu p-4">
-                        <div class="row box justify-content-between my-4">
-                            <div class="col">
+                    <div class="dropdown-menu p-4 dropdown-menu-right">
+                        <div class="row box justify-content-between my-4" style="margin: auto;" >
+                            <div class="col-md-4">
                                 <a href="#">
-                                    <i class="icon-apps purple lighten-2 avatar  r-5"></i>
-                                    <div class="pt-1">Apps</div>
+                                    <i class="icon-sign-out pink lighten-1 avatar  r-5"></i>
+                                    <div class="pt-1">Sign out</div>
                                 </a>
                             </div>
-                            <div class="col">
+                            <div class="col-md-4">
                                 <a href="#">
-                                    <i class="icon-beach_access pink lighten-1 avatar  r-5"></i>
-                                    <div class="pt-1">Profile</div>
+                                    <i class="icon-beach_access purple lighten-2 avatar  r-5"></i>
+                                    <div class="pt-1">Password</div>
                                 </a>
                             </div>
-                            <div class="col">
-                                <a href="#">
-                                    <i class="icon-perm_data_setting indigo lighten-2 avatar  r-5"></i>
-                                    <div class="pt-1">Settings</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row box justify-content-between my-4">
-                            <div class="col">
-                                <a href="#">
-                                    <i class="icon-star light-green lighten-1 avatar  r-5"></i>
-                                    <div class="pt-1">Favourites</div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="#">
-                                    <i class="icon-save2 orange accent-1 avatar  r-5"></i>
-                                    <div class="pt-1">Saved</div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="#">
-                                    <i class="icon-perm_data_setting grey darken-3 avatar  r-5"></i>
-                                    <div class="pt-1">Settings</div>
-                                </a>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row box justify-content-between my-4">
-                            <div class="col">
-                                <a href="#">
-                                    <i class="icon-apps purple lighten-2 avatar  r-5"></i>
-                                    <div class="pt-1">Apps</div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="#">
-                                    <i class="icon-beach_access pink lighten-1 avatar  r-5"></i>
-                                    <div class="pt-1">Profile</div>
-                                </a>
-                            </div>
-                            <div class="col">
+                            <div class="col-md-4">
                                 <a href="#">
                                     <i class="icon-perm_data_setting indigo lighten-2 avatar  r-5"></i>
                                     <div class="pt-1">Settings</div>
                                 </a>
                             </div>
                         </div>
+                       
+                        
                     </div>
                 </li>
             </ul>
         </div>
     </div>
 </div>
+</div>
 
-
-
-<router-outlet></router-outlet>
+<div class="page has-sidebar-left height-full">
+    <router-outlet></router-outlet>
+</div>

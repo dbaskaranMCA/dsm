@@ -3,12 +3,26 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DataTablesModule } from 'angular-datatables';
 import { LoginComponent } from './login/login.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatGridListModule,MatListModule,MatTableModule,MatCardModule,MatMenuModule,MatSidenavModule,MatIconModule,MatToolbarModule,MatSnackBarModule,MatInputModule,MatButtonModule,MatPaginatorModule,MatCheckboxModule,MatSortModule,MatDialogModule } from '@angular/material';
 import { HomeComponent } from './home/home.component';
 import { GlobalComponent } from './global/global.component';
+import { PickupDelivaryComponent } from './pickup-delivary/pickup-delivary.component';
+import { LocationComponent } from './location/location.component';
+import { ClusterComponent } from './cluster/cluster.component';
+import { WarehouseComponent } from './warehouse/warehouse.component';
+import { UserComponent } from './user/user.component';
+import { ProductsComponent } from './products/products.component';
+import { UserTrackerComponent } from './user-tracker/user-tracker.component';
+import { HealthComponent } from './health/health.component';
+import { CustomerComponent } from './customer/customer.component';
+import { ConfigurationComponent } from './configuration/configuration.component';
+import { LogsComponent } from './logs/logs.component';
+import { AuditsComponent } from './audits/audits.component';
+import { MetricsComponent } from './metrics/metrics.component';
 
 
 @NgModule({
@@ -16,7 +30,20 @@ import { GlobalComponent } from './global/global.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    GlobalComponent
+    GlobalComponent,
+    PickupDelivaryComponent,
+    LocationComponent,
+    ClusterComponent,
+    WarehouseComponent,
+    UserComponent,
+    ProductsComponent,
+    UserTrackerComponent,
+    HealthComponent,
+    CustomerComponent,
+    ConfigurationComponent,
+    LogsComponent,
+    AuditsComponent,
+    MetricsComponent
   ],
   imports: [
     BrowserModule,
@@ -38,8 +65,8 @@ import { GlobalComponent } from './global/global.component';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatDialogModule
-    
+    MatDialogModule,
+    DataTablesModule
 
 
   ],

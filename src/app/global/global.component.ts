@@ -4,6 +4,7 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 
+
 export interface UserData {
   id: string;
   name: string;
@@ -30,6 +31,7 @@ const NAMES: string[] = [
   styleUrls: ['./global.component.css']
 })
 export class GlobalComponent implements OnInit {
+  dtOptions: DataTables.Settings = {};
   displayedColumns: string[] = ['id', 'name', 'progress', 'color'];
   dataSource: MatTableDataSource<UserData>;
 
@@ -44,9 +46,12 @@ export class GlobalComponent implements OnInit {
     this.dataSource = new MatTableDataSource(users);
   }
 
-  ngOnInit() {
+  ngOnInit() :void{
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+    this.dtOptions = {
+      lengthChange: false
+    };
   }
 
   applyFilter(filterValue: string) {
