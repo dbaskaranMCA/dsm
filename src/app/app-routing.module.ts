@@ -8,7 +8,7 @@ import { LocationComponent } from './location/location.component';
 import { ClusterComponent } from './cluster/cluster.component';
 import { WarehouseComponent } from './warehouse/warehouse.component';
 import { UserComponent } from './user/user.component';
-import {CustomerComponent}from './customer/customer.component'
+import { CustomerComponent } from './customer/customer.component'
 import { ProductsComponent } from './products/products.component';
 import { UserTrackerComponent } from './user-tracker/user-tracker.component';
 import { HealthComponent } from './health/health.component';
@@ -16,13 +16,21 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { LogsComponent } from './logs/logs.component'
 import { AuditsComponent } from './audits/audits.component';
 import { MetricsComponent } from './metrics/metrics.component';
+import { EnduserComponent } from './enduser/enduser.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { TripsComponent } from './trips/trips.component';
+import { ConveyanceComponent } from './conveyance/conveyance.component';
+import { TrackuserComponent } from './trackuser/trackuser.component'
+import { TasksComponent } from './tasks/tasks.component';
+import { OrdersComponent } from './orders/orders.component';
+import { ExpensesComponent } from './expenses/expenses.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
 
   {
-    path: 'components', component: HomeComponent,
+    path: 'admin', component: HomeComponent,
     children: [
       { path: 'global', component: GlobalComponent },
       { path: 'pickup', component: PickupDelivaryComponent },
@@ -40,7 +48,18 @@ const routes: Routes = [
       { path: 'metrics', component: MetricsComponent }
     ]
   },
-
+  {
+    path: 'enduser', component: EnduserComponent,
+    children: [
+      { path: 'dashboard', component: UserDashboardComponent },
+      { path: 'tripe', component: TripsComponent },
+      { path: 'conveyance', component: ConveyanceComponent },
+      { path: 'trackuser', component: TrackuserComponent },
+      { path: 'tasks', component: TasksComponent },
+      { path: 'orders', component: OrdersComponent },
+      { path: 'expenses', component: ExpensesComponent }      
+    ]
+  },
   {
     path: 'login',
     redirectTo: '/login',

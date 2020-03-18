@@ -23,6 +23,14 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { LogsComponent } from './logs/logs.component';
 import { AuditsComponent } from './audits/audits.component';
 import { MetricsComponent } from './metrics/metrics.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { EnduserComponent } from './enduser/enduser.component';
+import { TripsComponent } from './trips/trips.component';
+import { ConveyanceComponent } from './conveyance/conveyance.component';
+import { TrackuserComponent } from './trackuser/trackuser.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { OrdersComponent } from './orders/orders.component';
+import { ExpensesComponent } from './expenses/expenses.component';
 
 
 @NgModule({
@@ -43,7 +51,15 @@ import { MetricsComponent } from './metrics/metrics.component';
     ConfigurationComponent,
     LogsComponent,
     AuditsComponent,
-    MetricsComponent
+    MetricsComponent,
+    UserDashboardComponent,
+    EnduserComponent,
+    TripsComponent,
+    ConveyanceComponent,
+    TrackuserComponent,
+    TasksComponent,
+    OrdersComponent,
+    ExpensesComponent
   ],
   imports: [
     BrowserModule,
