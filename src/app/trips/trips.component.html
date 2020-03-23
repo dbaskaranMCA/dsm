@@ -1,1 +1,407 @@
-<p>trips works!</p>
+<header class="blue accent-3 relative nav-sticky">
+    <div class="container-fluid text-white margin-left-15">
+        <div class="row p-t-b-10 ">
+            <div class="col">
+                <h4 class="text-white "><i class="icon-box"></i> Trips Details</h4>
+            </div>
+        </div>
+
+    </div>
+</header>
+<div class="container-fluid relative animatedParent animateOnce">
+    <section class="paper-card">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group has-icon col-md-6">
+                    <label>Warehouseid</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="City">
+                </div>
+                <div class="form-group has-icon col-md-6">
+                    <label>Warehouseid</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="City">
+                </div>
+                <div class="form-group has-icon col-md-6">
+                    <label> Tripstatus</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>All</option>
+                        <option>East</option>
+                        <option>West</option>
+                        <option>South</option>
+                        <option>North</option>
+
+                    </select>
+                </div>
+                <div class="form-group has-icon col-md-6">
+                    <label> Location</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>All</option>
+                        <option>East</option>
+                        <option>West</option>
+                        <option>South</option>
+                        <option>North</option>
+
+                    </select>
+                </div>
+                <div class="form-group has-icon">
+                    <button type="button" class="btn btn-primary pull-right margin-bottom-15 addBtn"> Search</button>
+                    <button type="button" class="btn btn-primary pull-right mr-1 margin-bottom-15 addBtn" > Download</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="paper-card">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+
+
+            <div class="box">
+                <div class="box-header with-border">
+                    <h4 class="box-title pull-left margin-top-10">Trips </h4>
+                    <button type="button" class="btn btn-primary pull-right margin-bottom-15 addBtn" data-toggle="modal"
+                        data-target="#exampleModal"> Add New Trips</button>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table datatable [dtOptions]="dtOptions" class="row-border hover table-bordered full-width">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>MSP ID</th>
+                                <th>MSP Name</th>
+                                <th>Trip Date</th>
+                                <th>Delivery Staff</th>
+                                <th>Total Trip Distance</th>
+                                <th>Trip Status</th>
+                                <th>Locations</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>39368</td>
+                                <td>1</td>
+                                <td>MSP (Super) New Delhi</td>
+                                <td>2020-03-16</td>
+                                <td></td>
+                                <td>0</td>
+                                <td>NEW</td>
+                                <td>New Delhi</td>
+                                <td>
+                            <tr>
+                                <td>
+                                    <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal"
+                                        data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                    <button class="btn btn-warning btn-xs  margin-left-5" title="Edit"
+                                        data-toggle="modal" data-target="#editDetails"><i
+                                            class="icon-pencil text-white"></i></button>
+                                    <button class="btn btn-danger btn-xs  margin-left-5" title="Delete"
+                                        data-toggle="modal" data-target="#deleteDetails"><i
+                                            class="icon-trash text-white"></i></button>
+                                </td>
+                            </tr>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>39368</td>
+                                <td>1</td>
+                                <td>MSP (Super) New Delhi</td>
+                                <td>2020-03-16</td>
+                                <td></td>
+                                <td>0</td>
+                                <td>NEW</td>
+                                <td>New Delhi</td>
+                                <td>
+                            <tr>
+                                <td>
+                                    <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal"
+                                        data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                    <button class="btn btn-warning btn-xs  margin-left-5" title="Edit"
+                                        data-toggle="modal" data-target="#editDetails"><i
+                                            class="icon-pencil text-white"></i></button>
+                                    <button class="btn btn-danger btn-xs  margin-left-5" title="Delete"
+                                        data-toggle="modal" data-target="#deleteDetails"><i
+                                            class="icon-trash text-white"></i></button>
+                                </td>
+                            </tr>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>39368</td>
+                                <td>1</td>
+                                <td>MSP (Super) New Delhi</td>
+                                <td>2020-03-16</td>
+                                <td></td>
+                                <td>0</td>
+                                <td>NEW</td>
+                                <td>New Delhi</td>
+                                <td>
+                            <tr>
+                                <td>
+                                    <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal"
+                                        data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                    <button class="btn btn-warning btn-xs  margin-left-5" title="Edit"
+                                        data-toggle="modal" data-target="#editDetails"><i
+                                            class="icon-pencil text-white"></i></button>
+                                    <button class="btn btn-danger btn-xs  margin-left-5" title="Delete"
+                                        data-toggle="modal" data-target="#deleteDetails"><i
+                                            class="icon-trash text-white"></i></button>
+                                </td>
+                            </tr>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>39368</td>
+                                <td>1</td>
+                                <td>MSP (Super) New Delhi</td>
+                                <td>2020-03-16</td>
+                                <td></td>
+                                <td>0</td>
+                                <td>NEW</td>
+                                <td>New Delhi</td>
+                                <td>
+                            <tr>
+                                <td>
+                                    <button class="btn btn-primary btn-xs blueBtn " title="View" data-toggle="modal"
+                                        data-target="#viewDetails"> <i class="icon-eye text-white"></i></button>
+                                    <button class="btn btn-warning btn-xs  margin-left-5" title="Edit"
+                                        data-toggle="modal" data-target="#editDetails"><i
+                                            class="icon-pencil text-white"></i></button>
+                                    <button class="btn btn-danger btn-xs  margin-left-5" title="Delete"
+                                        data-toggle="modal" data-target="#deleteDetails"><i
+                                            class="icon-trash text-white"></i></button>
+                                </td>
+                            </tr>
+                            </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left" id="exampleModalLabel">Create or edit a Trips</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group has-icon">
+                        <label>Warehouseid</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="City">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Warehousename</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="State">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Wlatitude</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Country">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Wlongitude</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="State">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Totaldistance</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Country">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Tripdate</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="State">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Deliverystaff</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Country">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label> Tripstatus</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>All</option>
+                            <option>East</option>
+                            <option>West</option>
+                            <option>South</option>
+                            <option>North</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group has-icon">
+                        <label> Location</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>All</option>
+                            <option>East</option>
+                            <option>West</option>
+                            <option>South</option>
+                            <option>North</option>
+
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary addBtn">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="viewDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document" style="width: 75%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left" id="exampleModalLabel">Trips Details</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Warehouseid</th>
+                            <th>Warehousename</th>
+                            <th>Wlatitude</th>
+                            <th>Wlatitude</th>
+                            <th>Totaldistance</th>
+                            <th>Tripdate</th>
+                            <th>Deliverystaff</th>
+                            <th>Tripstatus</th>
+                            <th>Location</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>39638</td>
+                            <td>1</td>
+                            <td>MSP (Super) New Delhi</td>
+                            <td>2020-03-16</td>
+                            <td></td>
+                            <td>0</td>
+
+                            <td>NEW</td>
+                            <td>New Delhi</td>
+                        </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="editDetails" tabindex=" -1 " role="dialog " aria-labelledby="exampleModalLabel "
+    aria-hidden="true ">
+    <div class="modal-dialog " role="document ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h4 class="modal-title pull-left " id="exampleModalLabel ">Create or edit a Trips</h4>
+                <button type="button " class="close " data-dismiss="modal" aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <form>
+
+                    <div class="form-group has-icon">
+                        <label>Warehouseid</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="City">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Warehousename</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="State">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Wlatitude</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Country">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Wlongitude</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="State">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Totaldistance</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Country">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Tripdate</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="State">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label>Deliverystaff</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Country">
+                    </div>
+                    <div class="form-group has-icon">
+                        <label> Tripstatus</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>All</option>
+                            <option>East</option>
+                            <option>West</option>
+                            <option>South</option>
+                            <option>North</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group has-icon">
+                        <label> Location</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>All</option>
+                            <option>East</option>
+                            <option>West</option>
+                            <option>South</option>
+                            <option>North</option>
+
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer ">
+                <button type="button " class="btn btn-secondary" data-dismiss="modal" aria-label="Close ">
+                    Close
+                </button>
+                <button type="button " class="btn btn-primary addBtn ">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="deleteDetails" tabindex=" -1 " role="dialog " aria-labelledby="exampleModalLabel "
+    aria-hidden="true ">
+    <div class="modal-dialog " role="document ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h4 class="modal-title pull-left " id="exampleModalLabel ">Confirm delete operation</h4>
+                <button type="button " class="close " data-dismiss="modal" aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <p>Are you sure you want to delete this Trips?</p>
+            </div>
+            <div class="modal-footer ">
+                <button type="button " class="btn btn-danger " data-dismiss="modal" aria-label="Close ">
+                    Delete
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>

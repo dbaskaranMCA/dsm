@@ -28,7 +28,6 @@ import { ExpensesComponent } from './expenses/expenses.component';
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
-
   {
     path: 'admin', component: HomeComponent,
     children: [
@@ -52,7 +51,7 @@ const routes: Routes = [
     path: 'enduser', component: EnduserComponent,
     children: [
       { path: 'dashboard', component: UserDashboardComponent },
-      { path: 'tripe', component: TripsComponent },
+      { path: 'trips', component: TripsComponent },
       { path: 'conveyance', component: ConveyanceComponent },
       { path: 'trackuser', component: TrackuserComponent },
       { path: 'tasks', component: TasksComponent },

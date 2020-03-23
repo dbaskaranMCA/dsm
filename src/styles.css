@@ -1170,3 +1170,7 @@
                 .pt-1, .py-1 {
                     padding-top: .25rem!important;
                 }
+
+                .mr-1{
+                    margin-right: 0.5rem;
+                }
